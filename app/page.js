@@ -56,27 +56,46 @@ const story = {
     image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
     choices: [
       { text: "Kiss her gently", next: "ending_kiss" },
-      { text: "Pull her into an embrace", next: "ending_embrace" }
+      { text: "Pull her into an embrace", next: "love_deeper" },
+      { text: "Whisper that you want more", next: "love_intimate" }
     ]
   },
   love_talk: {
-    text: "\"My name is Lina,\" she says. \"And you feel like someone I've been waiting for.\" She steps closer.",
+    text: "\"My name is Lina,\" she says. \"And you feel like someone I've been waiting for.\" She steps closer, eyes dark with something soft.",
     image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80",
     choices: [
       { text: "Tell her your name and lean in", next: "love_close" },
-      { text: "Smile and take her hand", next: "love_hold" }
+      { text: "Smile and take her hand", next: "love_hold" },
+      { text: "Ask if she wants to stay longer", next: "love_intimate" }
     ]
   },
   love_close: {
-    text: "She rests her forehead against yours. The world feels small and perfect. Her lips are close.",
+    text: "She rests her forehead against yours. The world feels small and perfect. Her lips are close, breathing warm.",
     image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
     choices: [
       { text: "Kiss her", next: "ending_kiss" },
-      { text: "Hold her close", next: "ending_embrace" }
+      { text: "Hold her close", next: "love_deeper" },
+      { text: "Let the moment deepen", next: "love_intimate" }
+    ]
+  },
+  love_deeper: {
+    text: "You pull her against you. She sighs into your neck. Her hands slide up your back. The forest fades.",
+    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+    choices: [
+      { text: "Kiss her deeper", next: "ending_passionate" },
+      { text: "Lay down with her in the grass", next: "love_intimate" }
+    ]
+  },
+  love_intimate: {
+    text: "She looks at you with open eyes. \"Come here,\" she whispers. You sink down together among the flowers. Her skin is warm under your hands.",
+    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
+    choices: [
+      { text: "Kiss her slowly, everywhere", next: "ending_passionate" },
+      { text: "Just hold her like this", next: "ending_tender" }
     ]
   },
   hills: {
-    text: "From the hills the meadow looks peaceful. You wonder if she's still there.",
+    text: "From the hills the meadow looks peaceful. You wonder if she's still there, waiting.",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     choices: [
       { text: "Go back to find her", next: "sunlit" },
@@ -84,13 +103,18 @@ const story = {
     ]
   },
   ending_kiss: {
-    text: "You kiss her slowly. She melts into you. The forest holds its breath. Some paths are meant to be shared. The End.",
+    text: "You kiss her slowly. She melts into you, fingers in your hair. The forest holds its breath. Some paths are meant to be shared. The End.",
     image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
     choices: [{ text: "Start again", next: "start" }]
   },
-  ending_embrace: {
-    text: "You hold her. She fits perfectly against you. Neither of you moves for a long time. The End.",
+  ending_passionate: {
+    text: "The kiss deepens. Clothes shift. The grass is cool beneath you both. She whispers your name like a secret. Time disappears. The End.",
     image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
+    choices: [{ text: "Start again", next: "start" }]
+  },
+  ending_tender: {
+    text: "You hold her close, skin to skin, hearts slow. No rush. Just the two of you and the quiet forest. The End.",
+    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
     choices: [{ text: "Start again", next: "start" }]
   },
   ending_peace: {
@@ -99,7 +123,7 @@ const story = {
     choices: [{ text: "Start again", next: "start" }]
   },
   ending_journey: {
-    text: "You walk on, but her smile stays with you. Some meetings change the path forever. The End.",
+    text: "You walk on, but her smile and the warmth of her stay with you. Some meetings change the path forever. The End.",
     image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80",
     choices: [{ text: "Start again", next: "start" }]
   }
