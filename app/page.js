@@ -79,19 +79,36 @@ const story = {
     ]
   },
   love_deeper: {
-    text: "You pull her against you. She sighs into your neck. Her hands slide up your back. The forest fades.",
+    text: "You pull her against you. She sighs into your neck. Her hands slide up your back, then lower. The forest fades.",
     image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
     choices: [
-      { text: "Kiss her deeper", next: "ending_passionate" },
+      { text: "Kiss her deeper", next: "love_more" },
       { text: "Lay down with her in the grass", next: "love_intimate" }
     ]
   },
   love_intimate: {
-    text: "She looks at you with open eyes. \"Come here,\" she whispers. You sink down together among the flowers. Her skin is warm under your hands.",
+    text: "She looks at you with open eyes. \"Come here,\" she whispers. You sink down together among the flowers. Her dress slips. Her skin is warm under your hands.",
     image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
     choices: [
-      { text: "Kiss her slowly, everywhere", next: "ending_passionate" },
-      { text: "Just hold her like this", next: "ending_tender" }
+      { text: "Kiss her slowly, everywhere", next: "love_more" },
+      { text: "Just hold her like this", next: "ending_tender" },
+      { text: "Let your hands explore", next: "love_explicit" }
+    ]
+  },
+  love_more: {
+    text: "The kiss turns hungry. She arches into you. Clothes fall away. The cool grass meets warm skin.",
+    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+    choices: [
+      { text: "Continue", next: "love_explicit" },
+      { text: "Slow down and hold her", next: "ending_tender" }
+    ]
+  },
+  love_explicit: {
+    text: "She pulls you closer. Your hands move over her. She moans softly against your mouth. Everything else disappears.",
+    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
+    choices: [
+      { text: "Don't stop", next: "ending_passionate" },
+      { text: "Whisper how much you want her", next: "ending_passionate" }
     ]
   },
   hills: {
@@ -108,7 +125,7 @@ const story = {
     choices: [{ text: "Start again", next: "start" }]
   },
   ending_passionate: {
-    text: "The kiss deepens. Clothes shift. The grass is cool beneath you both. She whispers your name like a secret. Time disappears. The End.",
+    text: "You move together. She whispers your name, breathless. The grass, the light, her body under yours — nothing else matters. Time disappears. The End.",
     image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
     choices: [{ text: "Start again", next: "start" }]
   },
