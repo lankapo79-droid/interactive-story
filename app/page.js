@@ -16,7 +16,8 @@ const story = {
     image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
     choices: [
       { text: "Walk toward her", next: "meet_her" },
-      { text: "Stay and watch from afar", next: "watch" }
+      { text: "Stay and watch from afar", next: "watch" },
+      { text: "Call out a soft hello", next: "meet_her" }
     ]
   },
   shadow: {
@@ -24,7 +25,8 @@ const story = {
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
     choices: [
       { text: "Approach and say hello", next: "meet_her" },
-      { text: "Sit beside the water", next: "stream_quiet" }
+      { text: "Sit beside the water", next: "stream_quiet" },
+      { text: "Watch her quietly first", next: "watch" }
     ]
   },
   meet_her: {
@@ -32,7 +34,8 @@ const story = {
     image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
     choices: [
       { text: "Take her hand", next: "love_hold" },
-      { text: "Ask her name", next: "love_talk" }
+      { text: "Ask her name", next: "love_talk" },
+      { text: "Tell her she's beautiful", next: "love_close" }
     ]
   },
   watch: {
@@ -40,7 +43,8 @@ const story = {
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
     choices: [
       { text: "Wave back and meet her", next: "meet_her" },
-      { text: "Continue on your way", next: "hills" }
+      { text: "Continue on your way", next: "hills" },
+      { text: "Stay and smile at her", next: "love_talk" }
     ]
   },
   stream_quiet: {
@@ -48,7 +52,8 @@ const story = {
     image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80",
     choices: [
       { text: "Lean closer", next: "love_close" },
-      { text: "Just stay in the silence", next: "ending_peace" }
+      { text: "Just stay in the silence", next: "ending_peace" },
+      { text: "Brush her hair gently", next: "love_intimate" }
     ]
   },
   love_hold: {
@@ -57,7 +62,8 @@ const story = {
     choices: [
       { text: "Kiss her gently", next: "ending_kiss" },
       { text: "Pull her into an embrace", next: "love_deeper" },
-      { text: "Whisper that you want more", next: "love_intimate" }
+      { text: "Whisper that you want more", next: "love_intimate" },
+      { text: "Kiss her forehead first", next: "love_close" }
     ]
   },
   love_talk: {
@@ -66,7 +72,8 @@ const story = {
     choices: [
       { text: "Tell her your name and lean in", next: "love_close" },
       { text: "Smile and take her hand", next: "love_hold" },
-      { text: "Ask if she wants to stay longer", next: "love_intimate" }
+      { text: "Ask if she wants to stay longer", next: "love_intimate" },
+      { text: "Kiss her softly", next: "ending_kiss" }
     ]
   },
   love_close: {
@@ -75,7 +82,8 @@ const story = {
     choices: [
       { text: "Kiss her", next: "ending_kiss" },
       { text: "Hold her close", next: "love_deeper" },
-      { text: "Let the moment deepen", next: "love_intimate" }
+      { text: "Let the moment deepen", next: "love_intimate" },
+      { text: "Whisper you want her", next: "love_more" }
     ]
   },
   love_deeper: {
@@ -83,7 +91,9 @@ const story = {
     image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
     choices: [
       { text: "Kiss her deeper", next: "love_more" },
-      { text: "Lay down with her in the grass", next: "love_intimate" }
+      { text: "Lay down with her in the grass", next: "love_intimate" },
+      { text: "Slide your hands under her dress", next: "love_explicit" },
+      { text: "Whisper what you want to do", next: "love_more" }
     ]
   },
   love_intimate: {
@@ -92,7 +102,8 @@ const story = {
     choices: [
       { text: "Kiss her slowly, everywhere", next: "love_more" },
       { text: "Just hold her like this", next: "ending_tender" },
-      { text: "Let your hands explore", next: "love_explicit" }
+      { text: "Let your hands explore", next: "love_explicit" },
+      { text: "Ask her what she wants", next: "love_explicit" }
     ]
   },
   love_more: {
@@ -100,7 +111,9 @@ const story = {
     image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
     choices: [
       { text: "Continue", next: "love_explicit" },
-      { text: "Slow down and hold her", next: "ending_tender" }
+      { text: "Slow down and hold her", next: "ending_tender" },
+      { text: "Kiss down her body", next: "love_explicit" },
+      { text: "Tell her how good she feels", next: "ending_passionate" }
     ]
   },
   love_explicit: {
@@ -108,7 +121,9 @@ const story = {
     image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
     choices: [
       { text: "Don't stop", next: "ending_passionate" },
-      { text: "Whisper how much you want her", next: "ending_passionate" }
+      { text: "Whisper how much you want her", next: "ending_passionate" },
+      { text: "Take your time with her", next: "ending_passionate" },
+      { text: "Ask her to guide you", next: "ending_passionate" }
     ]
   },
   hills: {
