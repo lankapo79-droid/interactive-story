@@ -13,7 +13,7 @@ const story = {
   },
   sunlit: {
     text: "The path opens into a golden meadow. A beautiful woman in a simple dress sits among the wildflowers, smiling softly at you.",
-    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
     choices: [
       { text: "Walk toward her", next: "meet_her" },
       { text: "Stay and watch from afar", next: "watch" },
@@ -22,7 +22,7 @@ const story = {
   },
   shadow: {
     text: "The trail grows quieter. By the stream, you see her again — or is it the same woman? She looks up, eyes gentle.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80",
     choices: [
       { text: "Approach and say hello", next: "meet_her" },
       { text: "Sit beside the water", next: "stream_quiet" },
@@ -31,7 +31,7 @@ const story = {
   },
   meet_her: {
     text: "She stands as you near. \"I was hoping someone would come,\" she says softly. Her hand brushes yours.",
-    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
     choices: [
       { text: "Take her hand", next: "love_hold" },
       { text: "Ask her name", next: "love_talk" },
@@ -40,7 +40,7 @@ const story = {
   },
   watch: {
     text: "You watch her gather flowers. She notices you and waves, then walks closer with a quiet smile.",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80",
     choices: [
       { text: "Wave back and meet her", next: "meet_her" },
       { text: "Continue on your way", next: "hills" },
@@ -49,7 +49,7 @@ const story = {
   },
   stream_quiet: {
     text: "You sit. She comes to sit beside you. The only sound is the water and her quiet breathing.",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80",
     choices: [
       { text: "Lean closer", next: "love_close" },
       { text: "Just stay in the silence", next: "ending_peace" },
@@ -58,7 +58,7 @@ const story = {
   },
   love_hold: {
     text: "Her fingers intertwine with yours. She looks at you like the forest just became warmer. \"Stay with me a while?\"",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
     choices: [
       { text: "Kiss her gently", next: "ending_kiss" },
       { text: "Pull her into an embrace", next: "love_deeper" },
@@ -68,7 +68,7 @@ const story = {
   },
   love_talk: {
     text: "\"My name is Lina,\" she says. \"And you feel like someone I've been waiting for.\" She steps closer, eyes dark with something soft.",
-    image: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=800&q=80",
     choices: [
       { text: "Tell her your name and lean in", next: "love_close" },
       { text: "Smile and take her hand", next: "love_hold" },
@@ -78,7 +78,7 @@ const story = {
   },
   love_close: {
     text: "She rests her forehead against yours. The world feels small and perfect. Her lips are close, breathing warm.",
-    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80",
     choices: [
       { text: "Kiss her", next: "ending_kiss" },
       { text: "Hold her close", next: "love_deeper" },
@@ -88,7 +88,7 @@ const story = {
   },
   love_deeper: {
     text: "You pull her against you. She sighs into your neck. Her hands slide up your back, then lower. The forest fades.",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&q=80",
     choices: [
       { text: "Kiss her deeper", next: "love_more" },
       { text: "Lay down with her in the grass", next: "love_intimate" },
@@ -98,7 +98,7 @@ const story = {
   },
   love_intimate: {
     text: "She looks at you with open eyes. \"Come here,\" she whispers. You sink down together among the flowers. Her dress slips. Her skin is warm under your hands.",
-    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
     choices: [
       { text: "Kiss her slowly, everywhere", next: "love_more" },
       { text: "Just hold her like this", next: "ending_tender" },
@@ -108,7 +108,7 @@ const story = {
   },
   love_more: {
     text: "The kiss turns hungry. She arches into you. Clothes fall away. The cool grass meets warm skin.",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80",
     choices: [
       { text: "Continue", next: "love_explicit" },
       { text: "Slow down and hold her", next: "ending_tender" },
@@ -118,7 +118,7 @@ const story = {
   },
   love_explicit: {
     text: "She pulls you closer. Your hands move over her. She moans softly against your mouth. Everything else disappears.",
-    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
     choices: [
       { text: "Don't stop", next: "ending_passionate" },
       { text: "Whisper how much you want her", next: "ending_passionate" },
@@ -136,17 +136,17 @@ const story = {
   },
   ending_kiss: {
     text: "You kiss her slowly. She melts into you, fingers in your hair. The forest holds its breath. Some paths are meant to be shared. The End.",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
     choices: [{ text: "Start again", next: "start" }]
   },
   ending_passionate: {
     text: "You move together. She whispers your name, breathless. The grass, the light, her body under yours — nothing else matters. Time disappears. The End.",
-    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&q=80",
     choices: [{ text: "Start again", next: "start" }]
   },
   ending_tender: {
     text: "You hold her close, skin to skin, hearts slow. No rush. Just the two of you and the quiet forest. The End.",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80",
     choices: [{ text: "Start again", next: "start" }]
   },
   ending_peace: {
